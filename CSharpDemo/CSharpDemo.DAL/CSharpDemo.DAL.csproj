@@ -40,7 +40,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Demo\EnrollmentRepository.cs" />
+    <Compile Include="Demo\GroupRepository.cs" />
+    <Compile Include="Demo\ContactRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CSharpDemo.Models.DTO\CSharpDemo.Models.DTO.csproj">
+      <Project>{50573A81-E2BC-422E-BC63-93CFF1B0E730}</Project>
+      <Name>CSharpDemo.Models.DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CSharpDemo.Models.Entity\CSharpDemo.Models.Entity.csproj">
+      <Project>{A76ACAB4-E1F9-4DD3-BC30-6F79EEA329F6}</Project>
+      <Name>CSharpDemo.Models.Entity</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

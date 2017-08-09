@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{50573A81-E2BC-422E-BC63-93CFF1B0E730}</ProjectGuid>
+    <ProjectGuid>{19E6A6D3-D925-4815-8BB2-D835E9DD41C7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CSharpDemo.Models.DTO</RootNamespace>
-    <AssemblyName>CSharpDemo.Models.DTO</AssemblyName>
+    <RootNamespace>CSharpDemo.Models.Enum</RootNamespace>
+    <AssemblyName>CSharpDemo.Models.Enum</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,16 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Demo\ContactDTO.cs" />
-    <Compile Include="Demo\EnrollmentDTO.cs" />
-    <Compile Include="Demo\GroupDTO.cs" />
+    <Compile Include="EnumDemo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\CSharpDemo.Models.Enum\CSharpDemo.Models.Enum.csproj">
-      <Project>{19E6A6D3-D925-4815-8BB2-D835E9DD41C7}</Project>
-      <Name>CSharpDemo.Models.Enum</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

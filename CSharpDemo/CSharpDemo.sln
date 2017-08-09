@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpDemo.Models.DTO", "CS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpDemo.Models.ViewModel", "CSharpDemo.Models.ViewModel\CSharpDemo.Models.ViewModel.csproj", "{43868F41-3C88-4D4B-9E1F-F5E9738E94E3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpDemo.Models.Enum", "CSharpDemo.Models.Enum\CSharpDemo.Models.Enum.csproj", "{19E6A6D3-D925-4815-8BB2-D835E9DD41C7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -71,6 +73,10 @@ Global
 		{43868F41-3C88-4D4B-9E1F-F5E9738E94E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{43868F41-3C88-4D4B-9E1F-F5E9738E94E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{43868F41-3C88-4D4B-9E1F-F5E9738E94E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19E6A6D3-D925-4815-8BB2-D835E9DD41C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19E6A6D3-D925-4815-8BB2-D835E9DD41C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19E6A6D3-D925-4815-8BB2-D835E9DD41C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19E6A6D3-D925-4815-8BB2-D835E9DD41C7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -79,5 +85,6 @@ Global
 		{A76ACAB4-E1F9-4DD3-BC30-6F79EEA329F6} = {847FC0F3-EC5D-498C-955B-E9914BB8D19E}
 		{50573A81-E2BC-422E-BC63-93CFF1B0E730} = {847FC0F3-EC5D-498C-955B-E9914BB8D19E}
 		{43868F41-3C88-4D4B-9E1F-F5E9738E94E3} = {847FC0F3-EC5D-498C-955B-E9914BB8D19E}
+		{19E6A6D3-D925-4815-8BB2-D835E9DD41C7} = {847FC0F3-EC5D-498C-955B-E9914BB8D19E}
 	EndGlobalSection
 EndGlobal
