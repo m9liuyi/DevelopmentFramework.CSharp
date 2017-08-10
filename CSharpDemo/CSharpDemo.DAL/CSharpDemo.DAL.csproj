@@ -30,6 +30,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,6 +47,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CSharpDemo.DAL.Interface\CSharpDemo.DAL.Interface.csproj">
+      <Project>{9AC33951-4515-45B2-A2F0-51006D65399D}</Project>
+      <Name>CSharpDemo.DAL.Interface</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CSharpDemo.Models.DTO\CSharpDemo.Models.DTO.csproj">
       <Project>{50573A81-E2BC-422E-BC63-93CFF1B0E730}</Project>
       <Name>CSharpDemo.Models.DTO</Name>
@@ -53,6 +58,14 @@
     <ProjectReference Include="..\CSharpDemo.Models.Entity\CSharpDemo.Models.Entity.csproj">
       <Project>{A76ACAB4-E1F9-4DD3-BC30-6F79EEA329F6}</Project>
       <Name>CSharpDemo.Models.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CSharpDemo.Models.QueryParameter\CSharpDemo.Models.QueryParameter.csproj">
+      <Project>{1A1DAD90-336B-4DFB-9DBF-7E81CF5BFDD2}</Project>
+      <Name>CSharpDemo.Models.QueryParameter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CSharpDemo.Utility\CSharpDemo.Utility.csproj">
+      <Project>{4E098431-452A-4048-B4CF-4F5D18BA07A0}</Project>
+      <Name>CSharpDemo.Utility</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpDemo.Models.ViewModel
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpDemo.Models.Enum", "CSharpDemo.Models.Enum\CSharpDemo.Models.Enum.csproj", "{19E6A6D3-D925-4815-8BB2-D835E9DD41C7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpDemo.Models.QueryParameter", "CSharpDemo.Models.QueryParameter\CSharpDemo.Models.QueryParameter.csproj", "{1A1DAD90-336B-4DFB-9DBF-7E81CF5BFDD2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -77,6 +79,10 @@ Global
 		{19E6A6D3-D925-4815-8BB2-D835E9DD41C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19E6A6D3-D925-4815-8BB2-D835E9DD41C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{19E6A6D3-D925-4815-8BB2-D835E9DD41C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A1DAD90-336B-4DFB-9DBF-7E81CF5BFDD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A1DAD90-336B-4DFB-9DBF-7E81CF5BFDD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A1DAD90-336B-4DFB-9DBF-7E81CF5BFDD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A1DAD90-336B-4DFB-9DBF-7E81CF5BFDD2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -86,5 +92,6 @@ Global
 		{50573A81-E2BC-422E-BC63-93CFF1B0E730} = {847FC0F3-EC5D-498C-955B-E9914BB8D19E}
 		{43868F41-3C88-4D4B-9E1F-F5E9738E94E3} = {847FC0F3-EC5D-498C-955B-E9914BB8D19E}
 		{19E6A6D3-D925-4815-8BB2-D835E9DD41C7} = {847FC0F3-EC5D-498C-955B-E9914BB8D19E}
+		{1A1DAD90-336B-4DFB-9DBF-7E81CF5BFDD2} = {847FC0F3-EC5D-498C-955B-E9914BB8D19E}
 	EndGlobalSection
 EndGlobal

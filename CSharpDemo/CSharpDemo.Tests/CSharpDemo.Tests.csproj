@@ -33,6 +33,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
@@ -82,6 +90,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\BaseTest.cs" />
+    <Compile Include="Controllers\Demo\ContactControllerTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Controllers\HomeControllerTest.cs" />
   </ItemGroup>
@@ -92,6 +102,14 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CSharpDemo.Models.ViewModel\CSharpDemo.Models.ViewModel.csproj">
+      <Project>{43868F41-3C88-4D4B-9E1F-F5E9738E94E3}</Project>
+      <Name>CSharpDemo.Models.ViewModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CSharpDemo.Utility\CSharpDemo.Utility.csproj">
+      <Project>{4E098431-452A-4048-B4CF-4F5D18BA07A0}</Project>
+      <Name>CSharpDemo.Utility</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CSharpDemo\CSharpDemo.csproj">
       <Project>{94A88B85-1A55-486B-8DB8-CF1EA51B1FED}</Project>
       <Name>CSharpDemo</Name>

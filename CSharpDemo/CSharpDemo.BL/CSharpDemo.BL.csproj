@@ -40,7 +40,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Demo\ContractManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CSharpDemo.BL.Interface\CSharpDemo.BL.Interface.csproj">
+      <Project>{35ABCA39-716E-4B8F-B97F-6315819B0FCC}</Project>
+      <Name>CSharpDemo.BL.Interface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CSharpDemo.DAL\CSharpDemo.DAL.csproj">
+      <Project>{F5BD5E53-9250-4330-BA8D-26EB908B89C8}</Project>
+      <Name>CSharpDemo.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CSharpDemo.Models.DTO\CSharpDemo.Models.DTO.csproj">
+      <Project>{50573A81-E2BC-422E-BC63-93CFF1B0E730}</Project>
+      <Name>CSharpDemo.Models.DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CSharpDemo.Models.QueryParameter\CSharpDemo.Models.QueryParameter.csproj">
+      <Project>{1A1DAD90-336B-4DFB-9DBF-7E81CF5BFDD2}</Project>
+      <Name>CSharpDemo.Models.QueryParameter</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
