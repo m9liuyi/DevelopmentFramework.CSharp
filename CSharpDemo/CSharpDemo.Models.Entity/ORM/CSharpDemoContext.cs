@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace CSharpDemo.Models.Entity.ORM
 {
-    public class CSharpDemoContext : DbContext
+    public class CSharpDemoContext : DbContext, ICSharpDempContext
     {
         public CSharpDemoContext() : base("CSharpDemoContext")
         {

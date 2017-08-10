@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 using CSharpDemo.Models.DTO;
 using CSharpDemo.Models.QueryParameter;
+using CSharpDemo.Models.Common;
 
 namespace CSharpDemo.DAL.Interface
 {
-    public interface IContactRepository
+    public interface IContactRepository : IDoC
     {
         ContactDTO Get(int id);
         List<ContactDTO> List(ContactQueryParameter param);

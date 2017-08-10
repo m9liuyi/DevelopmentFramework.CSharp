@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{BB522DA0-A121-4C12-B009-E869654A37FE}</ProjectGuid>
+    <ProjectGuid>{2FE76004-0F5A-48E0-A9D5-E89156C6D29F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CSharpDemo.BL</RootNamespace>
-    <AssemblyName>CSharpDemo.BL</AssemblyName>
+    <RootNamespace>CSharpDemo.Models.Common</RootNamespace>
+    <AssemblyName>CSharpDemo.Models.Common</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,34 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Demo\ContractManager.cs" />
+    <Compile Include="IDoC.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\CSharpDemo.BL.Interface\CSharpDemo.BL.Interface.csproj">
-      <Project>{35ABCA39-716E-4B8F-B97F-6315819B0FCC}</Project>
-      <Name>CSharpDemo.BL.Interface</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\CSharpDemo.DAL.Interface\CSharpDemo.DAL.Interface.csproj">
-      <Project>{9AC33951-4515-45B2-A2F0-51006D65399D}</Project>
-      <Name>CSharpDemo.DAL.Interface</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\CSharpDemo.DAL\CSharpDemo.DAL.csproj">
-      <Project>{F5BD5E53-9250-4330-BA8D-26EB908B89C8}</Project>
-      <Name>CSharpDemo.DAL</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\CSharpDemo.Models.Common\CSharpDemo.Models.Common.csproj">
-      <Project>{2FE76004-0F5A-48E0-A9D5-E89156C6D29F}</Project>
-      <Name>CSharpDemo.Models.Common</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\CSharpDemo.Models.DTO\CSharpDemo.Models.DTO.csproj">
-      <Project>{50573A81-E2BC-422E-BC63-93CFF1B0E730}</Project>
-      <Name>CSharpDemo.Models.DTO</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\CSharpDemo.Models.QueryParameter\CSharpDemo.Models.QueryParameter.csproj">
-      <Project>{1A1DAD90-336B-4DFB-9DBF-7E81CF5BFDD2}</Project>
-      <Name>CSharpDemo.Models.QueryParameter</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

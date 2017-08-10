@@ -54,6 +54,7 @@
     <Compile Include="Demo\Contact.cs" />
     <Compile Include="ORM\CSharpDemoContext.cs" />
     <Compile Include="ORM\CSharpDemoInitializer.cs" />
+    <Compile Include="ORM\ICSharpDempContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

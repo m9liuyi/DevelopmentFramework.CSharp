@@ -9,17 +9,23 @@ using CSharpDemo.Models.DTO;
 using CSharpDemo.Models.ViewModel;
 using CSharpDemo.Utility;
 using CSharpDemo.Models.QueryParameter;
+using CSharpDemo.BL.Interface;
 
 namespace CSharpDemo.Areas.Demo.Controllers
 {
     public class ContactController : Controller
     {
+        private IContractManager contactManager = null;
+
+        public ContactController(IContractManager _contactManager)
+        {
+            this.contactManager = _contactManager;
+        }
+
         // GET: Demo/Contact
         public ActionResult Index()
         {
-            ContractManager contactManager = new ContractManager();
-
-            var list = contactManager.List(new ContactQueryParameter());
+            var list = this.contactManager.List(new ContactQueryParameter());
 
             var models = MapperHelper.MapTo<ContactViewModel>(list);
 
@@ -29,8 +35,7 @@ namespace CSharpDemo.Areas.Demo.Controllers
         // GET: Demo/Contact/Details/5
         public ActionResult Details(int id)
         {
-            ContractManager contactManager = new ContractManager();
-            var contact = contactManager.Get(id);
+            var contact = this.contactManager.Get(id);
             var model = MapperHelper.MapTo<ContactViewModel>(contact);
             return View(model);
         }
@@ -48,11 +53,9 @@ namespace CSharpDemo.Areas.Demo.Controllers
             try
             {
                 // TODO: Add insert logic here
-                ContractManager contactManager = new ContractManager();
-
                 var dto = MapperHelper.MapTo<ContactDTO>(contact);
 
-                dto = contactManager.Create(dto);
+                dto = this.contactManager.Create(dto);
                 return RedirectToAction("Index", new { Id = contact.ID });
             }
             catch(Exception e)
@@ -64,9 +67,7 @@ namespace CSharpDemo.Areas.Demo.Controllers
         // GET: Demo/Contact/Edit/5
         public ActionResult Edit(int id)
         {
-            ContractManager contactManager = new ContractManager();
-
-            var contact = contactManager.Get(id);
+            var contact = this.contactManager.Get(id);
             var model = MapperHelper.MapTo<ContactViewModel>(contact);
 
             return View(model);
@@ -79,11 +80,9 @@ namespace CSharpDemo.Areas.Demo.Controllers
             try
             {
                 // TODO: Add update logic here
-                ContractManager contactManager = new ContractManager();
-
                 var dto = MapperHelper.MapTo<ContactDTO>(contact);
 
-                dto = contactManager.Update(dto);
+                dto = this.contactManager.Update(dto);
                 return RedirectToAction("Index");
             }
             catch
@@ -95,8 +94,7 @@ namespace CSharpDemo.Areas.Demo.Controllers
         // GET: Demo/Contact/Delete/5
         public ActionResult Delete(int id)
         {
-            ContractManager contactManager = new ContractManager();
-            var contact = contactManager.Get(id);
+            var contact = this.contactManager.Get(id);
             var model = MapperHelper.MapTo<ContactViewModel>(contact);
             return View(model);
         }
@@ -108,8 +106,7 @@ namespace CSharpDemo.Areas.Demo.Controllers
             try
             {
                 // TODO: Add delete logic here
-                ContractManager contactManager = new ContractManager();
-                contactManager.Delete(id);
+                this.contactManager.Delete(id);
                 return RedirectToAction("Index");
             }
             catch(Exception e)

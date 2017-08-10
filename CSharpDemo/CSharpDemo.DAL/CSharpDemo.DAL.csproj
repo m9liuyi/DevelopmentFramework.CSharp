@@ -51,6 +51,10 @@
       <Project>{9AC33951-4515-45B2-A2F0-51006D65399D}</Project>
       <Name>CSharpDemo.DAL.Interface</Name>
     </ProjectReference>
+    <ProjectReference Include="..\CSharpDemo.Models.Common\CSharpDemo.Models.Common.csproj">
+      <Project>{2FE76004-0F5A-48E0-A9D5-E89156C6D29F}</Project>
+      <Name>CSharpDemo.Models.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CSharpDemo.Models.DTO\CSharpDemo.Models.DTO.csproj">
       <Project>{50573A81-E2BC-422E-BC63-93CFF1B0E730}</Project>
       <Name>CSharpDemo.Models.DTO</Name>

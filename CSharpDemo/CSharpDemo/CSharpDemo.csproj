@@ -44,6 +44,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Autofac, Version=4.6.1.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <HintPath>..\packages\Autofac.4.6.1\lib\net45\Autofac.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Autofac.Integration.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <HintPath>..\packages\Autofac.Mvc5.4.0.2\lib\net45\Autofac.Integration.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
       <Private>True</Private>
@@ -194,9 +202,17 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CSharpDemo.BL.Interface\CSharpDemo.BL.Interface.csproj">
+      <Project>{35ABCA39-716E-4B8F-B97F-6315819B0FCC}</Project>
+      <Name>CSharpDemo.BL.Interface</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CSharpDemo.BL\CSharpDemo.BL.csproj">
       <Project>{BB522DA0-A121-4C12-B009-E869654A37FE}</Project>
       <Name>CSharpDemo.BL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CSharpDemo.Models.Common\CSharpDemo.Models.Common.csproj">
+      <Project>{2FE76004-0F5A-48E0-A9D5-E89156C6D29F}</Project>
+      <Name>CSharpDemo.Models.Common</Name>
     </ProjectReference>
     <ProjectReference Include="..\CSharpDemo.Models.DTO\CSharpDemo.Models.DTO.csproj">
       <Project>{50573A81-E2BC-422E-BC63-93CFF1B0E730}</Project>

@@ -45,8 +45,6 @@ namespace CSharpDemo.DAL
 
         public ContactDTO Update(ContactDTO contact)
         {
-            //var entity = this.Get(contact.ID);
-
             var entity = context.Contacts.Where(p => p.ID == contact.ID).FirstOrDefault();
             entity.Name = contact.Name;
             entity.EnrollmentDate = contact.EnrollmentDate;

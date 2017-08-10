@@ -4,22 +4,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using CSharpDemo.DAL;
 using CSharpDemo.Models.DTO;
 using CSharpDemo.Models.QueryParameter;
 using CSharpDemo.BL.Interface;
+using CSharpDemo.DAL.Interface;
 
 namespace CSharpDemo.BL
 {
     public class ContractManager : IContractManager
     {
 
-        private ContactRepository contactRep = null;
+        private IContactRepository contactRep = null;
 
 
-        public ContractManager()
+        public ContractManager(IContactRepository _contactRep)
         {
-            this.contactRep = new ContactRepository();
+            this.contactRep = _contactRep;
         }
 
         public ContactDTO Get(int id)
