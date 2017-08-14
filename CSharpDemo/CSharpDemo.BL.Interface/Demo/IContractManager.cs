@@ -10,7 +10,7 @@ using CSharpDemo.Models.Common;
 
 namespace CSharpDemo.BL.Interface
 {
-    public interface IContractManager : IDoC
+    public interface IContractManager : IIoC
     {
         ContactDTO Get(int id);
         List<ContactDTO> List(ContactQueryParameter param);

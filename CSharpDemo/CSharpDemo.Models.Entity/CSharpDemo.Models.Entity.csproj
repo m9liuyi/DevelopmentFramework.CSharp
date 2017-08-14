@@ -62,6 +62,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CSharpDemo.Models.Common\CSharpDemo.Models.Common.csproj">
+      <Project>{2FE76004-0F5A-48E0-A9D5-E89156C6D29F}</Project>
+      <Name>CSharpDemo.Models.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CSharpDemo.Models.Enum\CSharpDemo.Models.Enum.csproj">
       <Project>{19E6A6D3-D925-4815-8BB2-D835E9DD41C7}</Project>
       <Name>CSharpDemo.Models.Enum</Name>

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CSharpDemo.Models.Common
 {
-    public interface IDoC
+    public interface IIoC
     {
 
     }

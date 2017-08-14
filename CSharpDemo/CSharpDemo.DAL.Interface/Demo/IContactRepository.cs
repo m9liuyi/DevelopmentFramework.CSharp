@@ -10,7 +10,7 @@ using CSharpDemo.Models.Common;
 
 namespace CSharpDemo.DAL.Interface
 {
-    public interface IContactRepository : IDoC
+    public interface IContactRepository : IIoC
     {
         ContactDTO Get(int id);
         List<ContactDTO> List(ContactQueryParameter param);

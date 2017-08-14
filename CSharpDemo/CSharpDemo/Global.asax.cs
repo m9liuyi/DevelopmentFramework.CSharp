@@ -1,5 +1,6 @@
 ﻿using Autofac;
 using Autofac.Integration.Mvc;
+using CSharpDemo.Models.Common;
 using CSharpDemo.Utility;
 using System;
 using System.Collections.Generic;
@@ -24,18 +25,25 @@ namespace CSharpDemo
             #region 配置Autofac
 
             var builder = new ContainerBuilder();
-
             builder.RegisterControllers(typeof(MvcApplication).Assembly);
 
-            
-            var assembly = Assembly.GetExecutingAssembly();
-            builder.RegisterAssemblyTypes(assembly)
-                   .Where(t => t.Name.EndsWith("Repository"))
-                   .AsImplementedInterfaces();
 
-            builder.RegisterAssemblyTypes(assembly)
-                   .Where(t => t.Name.EndsWith("Manager"))
-                   .AsImplementedInterfaces();
+            var IoCProjectNames = new List<string>()
+            {
+                "CSharpDemo.BL",
+                "CSharpDemo.DAL",
+                "CSharpDemo.Utility"
+            };
+
+            foreach (var IoCProjectName in IoCProjectNames)
+            {
+                var assembly = Assembly.Load(IoCProjectName);
+
+                builder.RegisterAssemblyTypes(assembly)
+                       .Where(t => typeof(IIoC).IsAssignableFrom(t) && t != typeof(IIoC))
+                       .AsImplementedInterfaces()
+                       .InstancePerLifetimeScope();
+            }
 
             IContainer container = builder.Build();
             DependencyResolver.SetResolver(new AutofacDependencyResolver(container));
