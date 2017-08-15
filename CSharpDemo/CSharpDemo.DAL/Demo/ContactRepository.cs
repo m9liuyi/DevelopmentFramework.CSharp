@@ -13,18 +13,16 @@ using CSharpDemo.DAL.Interface;
 
 namespace CSharpDemo.DAL
 {
-    public class ContactRepository : IContactRepository
+    public class ContactRepository : GenericRepository<Contact>, IContactRepository
     {
-        private CSharpDemoContext context = null;
-
-        public ContactRepository()
+        public ContactRepository(CSharpDemoContext _context) : base(_context)
         {
-            context = new CSharpDemoContext();
+
         }
 
         public ContactDTO Get(int id)
         {
-            var entity = context.Contacts.Where(p => p.ID == id).FirstOrDefault();
+            var entity = this.Find(p => p.ID == id);
             return MapperHelper.MapTo<ContactDTO>(entity);
         }
 
@@ -37,8 +35,7 @@ namespace CSharpDemo.DAL
         public ContactDTO Create(ContactDTO contact)
         {
             var entity = MapperHelper.MapTo<Contact>(contact);
-            context.Contacts.Add(entity);
-            context.SaveChanges();
+            this.Add(entity);
 
             return MapperHelper.MapTo<ContactDTO>(entity);
         }
@@ -46,8 +43,8 @@ namespace CSharpDemo.DAL
         public ContactDTO Update(ContactDTO contact)
         {
             var entity = context.Contacts.Where(p => p.ID == contact.ID).FirstOrDefault();
-            entity.Name = contact.Name;
-            entity.EnrollmentDate = contact.EnrollmentDate;
+
+            this.Update(entity);
 
             context.SaveChanges();
 
@@ -57,8 +54,7 @@ namespace CSharpDemo.DAL
         public void Delete(int contactId)
         {
             var entity = context.Contacts.Where(p => p.ID == contactId).FirstOrDefault();
-            context.Contacts.Remove(entity);
-            context.SaveChanges();
+            this.Delete(entity);
         }
     }
 }

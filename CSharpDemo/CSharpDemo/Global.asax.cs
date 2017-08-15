@@ -1,6 +1,7 @@
 ﻿using Autofac;
 using Autofac.Integration.Mvc;
 using CSharpDemo.Models.Common;
+using CSharpDemo.Models.Entity.ORM;
 using CSharpDemo.Utility;
 using System;
 using System.Collections.Generic;
@@ -27,12 +28,14 @@ namespace CSharpDemo
             var builder = new ContainerBuilder();
             builder.RegisterControllers(typeof(MvcApplication).Assembly);
 
+            // 注册DbContext
+            builder.Register<CSharpDemoContext>(x => new CSharpDemoContext()).InstancePerLifetimeScope();
 
             var IoCProjectNames = new List<string>()
             {
                 "CSharpDemo.BL",
                 "CSharpDemo.DAL",
-                "CSharpDemo.Utility"
+                "CSharpDemo.Utility",
             };
 
             foreach (var IoCProjectName in IoCProjectNames)

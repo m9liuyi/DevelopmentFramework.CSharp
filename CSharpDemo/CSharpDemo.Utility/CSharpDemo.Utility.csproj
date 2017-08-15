@@ -34,6 +34,10 @@
       <HintPath>..\packages\AutoMapper.6.1.1\lib\net45\AutoMapper.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CSharpDemo\bin\EntityFramework.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -51,6 +55,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CSharpDemo.Models.Common\CSharpDemo.Models.Common.csproj">
+      <Project>{2FE76004-0F5A-48E0-A9D5-E89156C6D29F}</Project>
+      <Name>CSharpDemo.Models.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CSharpDemo.Models.DTO\CSharpDemo.Models.DTO.csproj">
       <Project>{50573A81-E2BC-422E-BC63-93CFF1B0E730}</Project>
       <Name>CSharpDemo.Models.DTO</Name>
