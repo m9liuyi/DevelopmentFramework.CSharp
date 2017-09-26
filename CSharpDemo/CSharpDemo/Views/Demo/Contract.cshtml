@@ -1,0 +1,603 @@
+﻿
+@{
+    ViewBag.Title = "贷款合同";
+}
+
+<div id="content" class="col-lg-10 col-sm-10">
+    <div class="row">
+        <div class="box col-md-8">
+            <div class="box-inner">
+                <div class="box-header well">
+                    <h2><i class="glyphicon glyphicon-th"></i> 基本信息</h2>
+
+                    <div class="box-icon">
+                        <a href="#" class="btn btn-setting btn-round btn-default">
+                            <i class="glyphicon glyphicon-cog"></i>
+                        </a>
+                        <a href="#" class="btn btn-minimize btn-round btn-default">
+                            <i class="glyphicon glyphicon-chevron-up"></i>
+                        </a>
+                        <a href="#" class="btn btn-close btn-round btn-default">
+                            <i class="glyphicon glyphicon-remove"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="box-content">
+                    <ul class="nav nav-tabs" id="myTab">
+                        <li class="active"><a href="#info">基本数据</a></li>
+                        <li><a href="#custom">分析数据</a></li>
+                        <li><a href="#messages">参考数据</a></li>
+                    </ul>
+
+                    <div id="myTabContent" class="tab-content">
+                        <div class="tab-pane active" id="info">
+
+                            <div class="row">
+                                <div class="box col-md-12">
+                                    <div class="box-inner">
+                                        <div class="box-content">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="control-group">
+                                                        <label class="control-label col-md-4 text-right" for="selectError">公司代码</label>
+                                                        <select id="selectError" data-rel="chosen" class="col-md-6">
+                                                            <option>上海祥光</option>
+                                                            <option>阳谷祥光</option>
+                                                            <option>香港鸿润</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="control-group">
+                                                        <label class="control-label col-md-4 text-right" for="selectError">产品类型</label>
+                                                        <select id="selectError" data-rel="chosen" class="col-md-6">
+                                                            <option>贷入</option>
+                                                            <option>贷出</option>
+                                                            <option>信用证</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="control-group">
+                                                        <label class="control-label col-md-4 text-right" for="selectError">业务伙伴</label>
+                                                        <select id="selectError" data-rel="chosen" class="col-md-6">
+                                                            <option>渣打</option>
+                                                            <option>JP摩根</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    &nbsp;
+                                                </div>
+                                            </div>
+
+                                            <hr />
+
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="control-group">
+                                                        <label class="control-label col-md-4 text-right" for="selectError">贷款类型</label>
+                                                        <select id="selectError" data-rel="chosen" class="col-md-6">
+                                                            <option>渣打</option>
+                                                            <option>JP摩根</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="control-group">
+                                                        <label class="control-label col-md-4 text-right" for="selectError">贷款类</label>
+                                                        <select id="selectError" data-rel="chosen" class="col-md-6">
+                                                            <option>渣打</option>
+                                                            <option>JP摩根</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="control-group">
+                                                        <label class="control-label col-md-4 text-right" for="selectError">抵押类型</label>
+                                                        <select id="selectError" data-rel="chosen" class="col-md-6">
+                                                            <option>渣打</option>
+                                                            <option>JP摩根</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="control-group">
+                                                        <label class="control-label col-md-4 text-right" for="selectError">主要抵押品</label>
+                                                        <select id="selectError" data-rel="chosen" class="col-md-6">
+                                                            <option>渣打</option>
+                                                            <option>JP摩根</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <hr />
+
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="control-group">
+                                                        <label class="control-label col-md-4 text-right" for="selectError">书面合同号</label>
+                                                        <input id="selectError" type="text" class="col-md-6">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    &nbsp;
+                                                </div>
+                                            </div>
+
+                                            <hr />
+
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="control-group">
+                                                        <label class="control-label col-md-4 text-right" for="selectError">合同币种</label>
+                                                        <select id="selectError" data-rel="chosen" class="col-md-6">
+                                                            <option>人民币</option>
+                                                            <option>美元</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="control-group">
+                                                        <label class="control-label col-md-4 text-right" for="selectError">申请日期</label>
+                                                        <input id="selectError" type="text" class="col-md-6">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="control-group">
+                                                        <label class="control-label col-md-4 text-right" for="selectError">审批日期</label>
+                                                        <input id="selectError" type="text" class="col-md-6">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="control-group">
+                                                        <label class="control-label col-md-4 text-right" for="selectError">承诺日期</label>
+                                                        <input id="selectError" type="text" class="col-md-6">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="control-group">
+                                                        <label class="control-label col-md-4 text-right" for="selectError">贷款金额</label>
+                                                        <input id="selectError" type="text" class="col-md-6">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    &nbsp;
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="tab-pane" id="custom">
+                            <div class="row">
+                                <div class="box col-md-12">
+                                    <div class="box-inner">
+                                        <div class="box-content">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="control-group">
+                                                        <label class="control-label col-md-4 text-right" for="selectError2">贷款目的</label>
+                                                        <select id="selectError2" data-rel="chosen" class="col-md-6">
+                                                            <option>上海祥光</option>
+                                                            <option>阳谷祥光</option>
+                                                            <option>香港鸿润</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="control-group">
+                                                        <label class="control-label col-md-4 text-right" for="selectError2">筹款类型</label>
+                                                        <select id="selectError2" data-rel="chosen" class="col-md-6">
+                                                            <option>贷入</option>
+                                                            <option>贷出</option>
+                                                            <option>信用证</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="control-group">
+                                                        <label class="control-label col-md-4 text-right" for="selectError">期限</label>
+                                                        <input id="selectError" type="text" class="col-md-6">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    &nbsp;
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="messages">
+                            <div class="row">
+                                <div class="box col-md-12">
+                                    <div class="box-inner">
+                                        <div class="box-content">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="control-group">
+                                                        <label class="control-label col-md-4 text-right" for="selectError">组键1</label>
+                                                        <input id="selectError" type="text" class="col-md-6">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="control-group">
+                                                        <label class="control-label col-md-4 text-right" for="selectError">组键2</label>
+                                                        <input id="selectError" type="text" class="col-md-6">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="control-group">
+                                                        <label class="control-label col-md-4 text-right" for="selectError">组键3</label>
+                                                        <input id="selectError" type="text" class="col-md-6">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    &nbsp;
+                                                </div>
+                                            </div>
+
+                                            <hr />
+
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="control-group">
+                                                        <label class="control-label col-md-4 text-right" for="selectError">替换号1</label>
+                                                        <input id="selectError" type="text" class="col-md-6">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="control-group">
+                                                        <label class="control-label col-md-4 text-right" for="selectError">替换号2</label>
+                                                        <input id="selectError" type="text" class="col-md-6">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="box col-md-8">
+            <div class="box-inner">
+                <div class="box-header well" data-original-title="">
+                    <h2><i class="glyphicon glyphicon-th"></i> 附加信息</h2>
+                    <div class="box-icon">
+                        <a href="#" class="btn btn-setting btn-round btn-default">
+                            <i class="glyphicon glyphicon-cog"></i>
+                        </a>
+                        <a href="#" class="btn btn-minimize btn-round btn-default">
+                            <i class="glyphicon glyphicon-chevron-up"></i>
+                        </a>
+                        <a href="#" class="btn btn-close btn-round btn-default">
+                            <i class="glyphicon glyphicon-remove"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="box-content">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="control-group">
+                                <label class="control-label col-md-4 text-right" for="selectError">附加信息1</label>
+                                <input id="selectError" type="text" class="col-md-6">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            &nbsp;
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/span-->
+    </div>
+
+
+    <div class="row">
+        <div class="box col-md-8">
+            <div class="box-inner">
+                <div class="box-header well">
+                    <h2><i class="glyphicon glyphicon-th"></i> 条件信息</h2>
+
+                    <div class="box-icon">
+                        <a href="#" class="btn btn-setting btn-round btn-default">
+                            <i class="glyphicon glyphicon-cog"></i>
+                        </a>
+                        <a href="#" class="btn btn-minimize btn-round btn-default">
+                            <i class="glyphicon glyphicon-chevron-up"></i>
+                        </a>
+                        <a href="#" class="btn btn-close btn-round btn-default">
+                            <i class="glyphicon glyphicon-remove"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="box-content">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="control-group">
+                                <label class="control-label col-md-4 text-right" for="selectError">承诺资本</label>
+                                <input id="selectError" type="text" class="col-md-6">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="control-group">
+                                <label class="control-label col-md-4 text-right" for="selectError">还款类型</label>
+                                <select id="selectError" data-rel="chosen" class="col-md-6">
+                                    <option>上海祥光</option>
+                                    <option>阳谷祥光</option>
+                                    <option>香港鸿润</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr />
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="control-group">
+                                <label class="control-label col-md-4 text-right" for="selectError">期限开始</label>
+                                <input id="selectError" type="text" class="col-md-6">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="control-group">
+                                <label class="control-label col-md-4 text-right" for="selectError">固定起始日</label>
+                                <input id="selectError" type="text" class="col-md-6">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="control-group">
+                                <label class="control-label col-md-4 text-right" for="selectError">固定单位</label>
+                                <input id="selectError" type="text" class="col-md-6">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="control-group">
+                                <label class="control-label col-md-4 text-right" for="selectError">期限结束</label>
+                                <input id="selectError" type="text" class="col-md-6">
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr />
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="control-group">
+                                <label class="control-label col-md-4 text-right" for="selectError">利息计算法</label>
+                                <select id="selectError" data-rel="chosen" class="col-md-6">
+                                    <option>渣打</option>
+                                    <option>JP摩根</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="control-group">
+                                <label class="control-label col-md-4 text-right" for="selectError">有效利息法</label>
+                                <select id="selectError" data-rel="chosen" class="col-md-6">
+                                    <option>渣打</option>
+                                    <option>JP摩根</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr />
+
+                    <div class="row">
+                        <div class="box col-md-12">
+                            <div class="box-inner">
+                                <div class="box-header well" data-original-title="">
+                                    <h2>计息条件&还款条件</h2>
+                                    <div class="box-icon">
+                                        <a href="#" class="btn btn-setting btn-round btn-default">
+                                            <i class="glyphicon glyphicon-cog"></i>
+                                        </a>
+                                        <a href="#" class="btn btn-minimize btn-round btn-default">
+                                            <i class="glyphicon glyphicon-chevron-up"></i>
+                                        </a>
+                                        <a href="#" class="btn btn-close btn-round btn-default">
+                                            <i class="glyphicon glyphicon-remove"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="box-content">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th>条件类型文本</th>
+                                                <th>生效日</th>
+                                                <th>百分比</th>
+                                                <th>条件金额</th>
+                                                <th>币种</th>
+                                                <th>frq</th>
+                                                <th>到期日</th>
+                                                <th>计算日期</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>名义利息-费用化</td>
+                                                <td class="center">2017.09.09</td>
+                                                <td class="center">0</td>
+                                                <td class="center"></td>
+                                                <td class="center">CNY</td>
+                                                <td class="center">3</td>
+                                                <td class="center">2017.09.21</td>
+                                                <td class="center">2017.09.20</td>
+                                            </tr>
+                                            <tr>
+                                                <td>最终偿付</td>
+                                                <td class="center">2017.09.09</td>
+                                                <td class="center">0</td>
+                                                <td class="center"></td>
+                                                <td class="center">CNY</td>
+                                                <td class="center">3</td>
+                                                <td class="center">2017.09.19</td>
+                                                <td class="center">2017.09.19</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <ul class="pagination pagination-centered">
+                                        <li><a href="#">Prev</a></li>
+                                        <li class="active">
+                                            <a href="#">1</a>
+                                        </li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li><a href="#">4</a></li>
+                                        <li><a href="#">Next</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="box col-md-8">
+            <div class="box-inner">
+                <div class="box-header well" data-original-title="">
+                    <h2><i class="glyphicon glyphicon-th"></i> 伙伴信息</h2>
+                    <div class="box-icon">
+                        <a href="#" class="btn btn-setting btn-round btn-default">
+                            <i class="glyphicon glyphicon-cog"></i>
+                        </a>
+                        <a href="#" class="btn btn-minimize btn-round btn-default">
+                            <i class="glyphicon glyphicon-chevron-up"></i>
+                        </a>
+                        <a href="#" class="btn btn-close btn-round btn-default">
+                            <i class="glyphicon glyphicon-remove"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="box-content">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="control-group">
+                                <label class="control-label col-md-4 text-right" for="selectError">伙伴类型</label>
+                                <select id="selectError" data-rel="chosen" class="col-md-6">
+                                    <option>人民币</option>
+                                    <option>美元</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            &nbsp;
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/span-->
+    </div>
+
+    <div class="row">
+        <div class="box col-md-10">
+            <div class="box-inner">
+                <div class="box-header well" data-original-title="">
+                    <h2><i class="glyphicon glyphicon-th"></i> 付款明细</h2>
+                    <div class="box-icon">
+                        <a href="#" class="btn btn-setting btn-round btn-default">
+                            <i class="glyphicon glyphicon-cog"></i>
+                        </a>
+                        <a href="#" class="btn btn-minimize btn-round btn-default">
+                            <i class="glyphicon glyphicon-chevron-up"></i>
+                        </a>
+                        <a href="#" class="btn btn-close btn-round btn-default">
+                            <i class="glyphicon glyphicon-remove"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="box-content">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>条件类型文本</th>
+                                <th>生效日</th>
+                                <th>百分比</th>
+                                <th>条件金额</th>
+                                <th>币种</th>
+                                <th>frq</th>
+                                <th>到期日</th>
+                                <th>计算日期</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>名义利息-费用化</td>
+                                <td class="center">2017.09.09</td>
+                                <td class="center">0</td>
+                                <td class="center"></td>
+                                <td class="center">CNY</td>
+                                <td class="center">3</td>
+                                <td class="center">2017.09.21</td>
+                                <td class="center">2017.09.20</td>
+                            </tr>
+                            <tr>
+                                <td>最终偿付</td>
+                                <td class="center">2017.09.09</td>
+                                <td class="center">0</td>
+                                <td class="center"></td>
+                                <td class="center">CNY</td>
+                                <td class="center">3</td>
+                                <td class="center">2017.09.19</td>
+                                <td class="center">2017.09.19</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <ul class="pagination pagination-centered">
+                        <li><a href="#">Prev</a></li>
+                        <li class="active">
+                            <a href="#">1</a>
+                        </li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">Next</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button class="btn btn-primary btn-sm">&nbsp;保存&nbsp;</button>
+</div>
