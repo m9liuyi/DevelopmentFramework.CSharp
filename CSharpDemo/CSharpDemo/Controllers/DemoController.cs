@@ -13,57 +13,42 @@ namespace CSharpDemo.Controllers
             return View();
         }
 
-        public ActionResult UIFeatures()
+        public ActionResult Index2()
         {
             return View();
         }
 
-        public ActionResult Forms()
+        public ActionResult Index3()
         {
             return View();
         }
 
-        public ActionResult Charts()
+        public ActionResult GeneralForm()
         {
             return View();
         }
 
-        public ActionResult Typography()
+        public ActionResult AdvancedComponents()
         {
             return View();
         }
 
-        public ActionResult Gallery()
+        public ActionResult FormValidation()
         {
             return View();
         }
 
-        public ActionResult Tables()
+        public ActionResult FormWizard()
         {
             return View();
         }
 
-        public ActionResult Calendar()
+        public ActionResult FormUpload()
         {
             return View();
         }
 
-        public ActionResult Grid()
-        {
-            return View();
-        }
-
-        public ActionResult Icon()
-        {
-            return View();
-        }
-
-        public ActionResult Tour()
-        {
-            return View();
-        }
-
-        public ActionResult Contract()
+        public ActionResult FormButtons()
         {
             return View();
         }
