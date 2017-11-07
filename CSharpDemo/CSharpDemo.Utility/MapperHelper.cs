@@ -19,7 +19,7 @@ namespace CSharpDemo.Utility
             if (obj == null)
             {
                 return default(T);
-            }
+            } 
             return Mapper.Map<T>(obj);
         }
 
