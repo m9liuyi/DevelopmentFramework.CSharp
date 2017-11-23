@@ -40,9 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Demo\ContactDTO.cs" />
-    <Compile Include="Demo\EnrollmentDTO.cs" />
-    <Compile Include="Demo\GroupDTO.cs" />
+    <Compile Include="BankData\ZJBankCodeDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -16,16 +16,12 @@ namespace CSharpDemo.Models.Entity.ORM
     {
         public readonly Guid Identity;
 
-        public CSharpDemoContext() : base("CSharpDemoContext")
+        public CSharpDemoContext() : base("name=CSharpDemoContext")
         {
             Identity = Guid.NewGuid();
         }
 
-        public DbSet<Contact> Contacts { set; get; }
-
-        public DbSet<Enrollment> Enrollments { set; get; }
-
-        public DbSet<Group> Groups { set; get; }
+        public DbSet<ZJBankCode> ZJBankCodes { set; get; }
 
         public CSharpDemoContext Context
         {

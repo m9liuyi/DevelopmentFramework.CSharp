@@ -29,7 +29,8 @@ namespace CSharpDemo
             builder.RegisterControllers(typeof(MvcApplication).Assembly);
 
             // 注册DbContext
-            builder.Register<CSharpDemoContext>(x => new CSharpDemoContext()).InstancePerLifetimeScope();
+            builder.Register<CSharpDemoContext>(x => new CSharpDemoContext())
+                .InstancePerLifetimeScope();
 
             var IoCProjectNames = new List<string>()
             {

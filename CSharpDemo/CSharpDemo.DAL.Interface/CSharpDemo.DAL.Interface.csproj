@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Demo\IContactRepository.cs" />
+    <Compile Include="BankData\IZJBankCodeDAL.cs" />
     <Compile Include="IGenericRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -55,6 +55,10 @@
     <ProjectReference Include="..\CSharpDemo.Models.DTO\CSharpDemo.Models.DTO.csproj">
       <Project>{50573A81-E2BC-422E-BC63-93CFF1B0E730}</Project>
       <Name>CSharpDemo.Models.DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CSharpDemo.Models.Entity\CSharpDemo.Models.Entity.csproj">
+      <Project>{A76ACAB4-E1F9-4DD3-BC30-6F79EEA329F6}</Project>
+      <Name>CSharpDemo.Models.Entity</Name>
     </ProjectReference>
     <ProjectReference Include="..\CSharpDemo.Models.QueryParameter\CSharpDemo.Models.QueryParameter.csproj">
       <Project>{1A1DAD90-336B-4DFB-9DBF-7E81CF5BFDD2}</Project>

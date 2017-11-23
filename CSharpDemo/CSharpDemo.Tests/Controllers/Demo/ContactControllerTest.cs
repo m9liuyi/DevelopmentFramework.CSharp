@@ -7,7 +7,6 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 using CSharpDemo;
 using CSharpDemo.Controllers;
-using CSharpDemo.Areas.Demo.Controllers;
 using CSharpDemo.Models.ViewModel;
 
 namespace CSharpDemo.Tests.Controllers
@@ -35,7 +34,7 @@ namespace CSharpDemo.Tests.Controllers
             DemoController controller = new DemoController();
 
             // Act
-            ViewResult result = controller.About() as ViewResult;
+            ViewResult result = controller.Calendar() as ViewResult;
 
             // Assert
             Assert.AreEqual("Your application description page.", result.ViewBag.Message);

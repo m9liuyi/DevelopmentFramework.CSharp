@@ -50,9 +50,7 @@ namespace CSharpDemo.Utility
     { 
         public EntityDtoTransitionProfile()
         {
-            CreateMap<Contact, ContactDTO>().ReverseMap();
-            CreateMap<Group, GroupDTO>().ReverseMap();
-            CreateMap<Enrollment, EnrollmentDTO>().ReverseMap();
+            CreateMap<ZJBankCode, ZJBankCodeDTO>().ReverseMap();
         }
 
 
@@ -65,7 +63,7 @@ namespace CSharpDemo.Utility
     {
         public ViewModelDtoTransitionProfile()
         {
-            CreateMap<ContactViewModel, ContactDTO>().ReverseMap();
+            CreateMap<BankCodeViewModel, ZJBankCodeDTO>().ReverseMap();
         }
     }
 

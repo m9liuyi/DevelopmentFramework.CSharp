@@ -140,6 +140,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\BankCodeController.cs" />
     <Compile Include="Controllers\DemoController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -1278,6 +1279,11 @@
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Views\Demo\blank.html" />
+    <Content Include="Views\BankCode\Index.cshtml" />
+    <Content Include="Views\BankCode\Create.cshtml" />
+    <Content Include="Views\BankCode\Edit.cshtml" />
+    <Content Include="Views\BankCode\Delete.cshtml" />
+    <Content Include="Views\BankCode\Details.cshtml" />
     <None Include="Views\Demo\Calendar.cshtml" />
     <None Include="Views\Demo\Charts.cshtml" />
     <Content Include="Views\Demo\Error.html" />
@@ -1349,6 +1355,10 @@
     <ProjectReference Include="..\CSharpDemo.Utility\CSharpDemo.Utility.csproj">
       <Project>{4E098431-452A-4048-B4CF-4F5D18BA07A0}</Project>
       <Name>CSharpDemo.Utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PIClient\CSharpDemo.PIClient.csproj">
+      <Project>{755B8BAB-0063-43CE-BED6-66034AC8BCF9}</Project>
+      <Name>CSharpDemo.PIClient</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

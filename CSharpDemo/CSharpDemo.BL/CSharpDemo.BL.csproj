@@ -40,7 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Demo\ContractManager.cs" />
+    <Compile Include="BankData\ZJBankCodeManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -63,6 +63,10 @@
     <ProjectReference Include="..\CSharpDemo.Models.DTO\CSharpDemo.Models.DTO.csproj">
       <Project>{50573A81-E2BC-422E-BC63-93CFF1B0E730}</Project>
       <Name>CSharpDemo.Models.DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CSharpDemo.Models.Entity\CSharpDemo.Models.Entity.csproj">
+      <Project>{a76acab4-e1f9-4dd3-bc30-6f79eea329f6}</Project>
+      <Name>CSharpDemo.Models.Entity</Name>
     </ProjectReference>
     <ProjectReference Include="..\CSharpDemo.Models.QueryParameter\CSharpDemo.Models.QueryParameter.csproj">
       <Project>{1A1DAD90-336B-4DFB-9DBF-7E81CF5BFDD2}</Project>

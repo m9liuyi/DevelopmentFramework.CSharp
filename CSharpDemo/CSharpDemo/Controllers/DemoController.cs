@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CSharpDemo.PIClient;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -10,6 +11,9 @@ namespace CSharpDemo.Controllers
     {
         public ActionResult Index()
         {
+            ClientDemo cd = new ClientDemo();
+            cd.GetDemoResult();
+
             return View();
         }
 

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CSharpDemo.Models.Common;
+using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 
@@ -8,21 +10,21 @@ namespace CSharpDemo.DAL.Interface
     /// 接口基类
     /// </summary>
     /// <typeparam name="T">类型</typeparam>
-    public interface IGenericRepository<T>
+    public interface IGenericRepository<T, M> : IIoC
     {
         /// <summary>
         /// 新增
         /// </summary>
         /// <param name="entity">新增的对象</param>
         /// <returns></returns>
-        T Add(T entity);
+        T Create(T entity);
 
         /// <summary>
         /// 记录数
         /// </summary>
         /// <param name="predicate">where条件</param>
         /// <returns></returns>
-        int Count(Expression<Func<T, bool>> predicate);
+        int Count(Expression<Func<M, bool>> predicate);
 
         /// <summary>
         /// 更新
@@ -43,12 +45,12 @@ namespace CSharpDemo.DAL.Interface
         /// </summary>
         /// <param name="anyLambda"></param>
         /// <returns></returns>
-        bool Exist(Expression<Func<T, bool>> anyLambda);
+        bool Exist(Expression<Func<M, bool>> anyLambda);
 
         /// <summary>
         /// 查询数据
         /// </summary>
-        T Find(Expression<Func<T, bool>> whereLambda);
+        T Find(Expression<Func<M, bool>> whereLambda);
 
         /// <summary>
         /// 查询数据列表
@@ -58,11 +60,11 @@ namespace CSharpDemo.DAL.Interface
         /// <param name="isAsc">是否按升序排序</param>
         /// <param name="orderLamdba"></param>
         /// <returns></returns>
-        IQueryable<T> FindList<S>(Expression<Func<T, bool>> whereLamdba, bool isAsc, Expression<Func<T, S>> orderLamdba);
+        IList<T> FindList<S>(Expression<Func<M, bool>> whereLamdba, bool isAsc, Expression<Func<M, S>> orderLamdba);
 
         /// <summary>
         /// 查询分页数据列表
         /// </summary>
-        IQueryable<T> FindPageList<S>(int pageIndex, int pageSize, out int totalRecord, Expression<Func<T, bool>> whereLamdba, bool isAsc, Expression<Func<T, S>> orderLamdba);
+        IList<T> FindPageList<S>(int pageIndex, int pageSize, out int totalRecord, Expression<Func<M, bool>> whereLamdba, bool isAsc, Expression<Func<M, S>> orderLamdba);
     }
 }
